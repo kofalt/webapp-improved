@@ -109,7 +109,6 @@ class Request(webob.Request):
     #: A dictionary to register objects used during the request lifetime.
     registry = None
     # Attributes from webapp.
-    request_body_tempfile_limit = 0
     uri = property(lambda self: self.url)
     query = property(lambda self: self.query_string)
 
